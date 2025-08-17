@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.production
+venv/
+venv_local/
+.vscode/
+.idea/
+*.log
+.pytest_cache/
+.coverage

@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# FastAPI / Pydantic
+.env
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Virtualenv
+venv/
+.env/
+.venv/
+
+# MongoDB dumps
+*.bson
+*.json
+
+# OS
+.DS_Store
+Thumbs.db
