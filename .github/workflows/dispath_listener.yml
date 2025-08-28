@@ -1,0 +1,14 @@
+name: Custom Dispatch Listener
+
+on:
+  repository_dispatch:
+    types: [run-tests, deploy-to-prod]  # Optional filtering
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the payload
+        run: |
+          echo "Event type: ${{ github.event.action }}"
+          echo "Payload value: ${{ github.event.client_payload.env }}"
